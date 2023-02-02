@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+</head>
+<body>
+    <h1>Hello Admin:</h1>
+    <h3>Add User</h3>
+    <form action="javascript:void(0);" method="POST" onsubmit="addUser()">
+        <input type="text" id="add-name" placeholder="New name" required>
+        <input type="text" id="add-password" placeholder="New password" required>
+        <input type="submit" value="Add">
+    </form>
+
+    <!-- <div id="TaskForm">
+        <h3>Task</h3>
+        <form action="javascript:void(0);" onsubmit="updateUser()">
+            <input type="hidden" id="edit-id">
+             <input type="checkbox" id="edit-isDone">
+            <input type="text" id="edit-name"> 
+            <input type="submit" value="Save">
+            <a onclick="closeInput()" aria-label="Close">&#10006;</a>
+        </form>
+    </div> -->
+  
+
+    <table>
+        <tr>
+            <th>Name User</th>
+            <th></th>
+        </tr>
+        <tbody id="users"></tbody>
+    </table>
+    
+    <script src="js/Admin.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+       getUser();
+    </script>
+
+    <!-- <script src="js/Login.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        getItem();
+        
+    </script> -->
+
+
+</body>
+</html> 
